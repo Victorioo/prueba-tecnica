@@ -1,7 +1,8 @@
+import styles from './about.module.css'
 export default function About() {
   return (
     <div>
-      <h2>Sobre mí</h2>
+      <h2 className={styles.title}>Sobre mí</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati sed,
         dolores, debitis recusandae, sequi delectus maiores est iusto hic

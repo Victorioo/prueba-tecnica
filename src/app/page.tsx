@@ -7,10 +7,10 @@ import Tab  from "./components/Tabs/types";
 import Form from "./components/ContactForm/Form";
 
 const data: Tab[] = [
-  // { id: 1, title: "Sobre mí", content: <About /> },
-  { id: 1, title: "Contacto", content: <Form /> },
+  { id: 1, title: "Sobre mí", content: <About /> },
   { id: 2, title: "Intereses" },
-  { id: 3, title: "Sobre mí", },
+  { id: 3, title: "Contacto", content: <Form /> },
+  // { id: 3, title: "Sobre mí", },
 ];
 
 export default function Home() {
