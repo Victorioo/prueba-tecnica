@@ -1,19 +1,20 @@
 // components/Tabs.js
 "use client";
+import Tab from "./types";
+
 import { useState } from "react";
 import styles from "./tabs.module.css";
-import { Tab } from "../types";
 
 const Tabs = ({ data }: { data: Tab[] }) => {
   const [activeTab, setActiveTab] = useState(1);
   const [transitioning, setTransitioning] = useState(false);
 
-  const RenderContent = () => {
+  const renderContent = () => {
     const tab = data.find((tab) => tab.id === activeTab);
     return tab?.content || "Sin contenido por ahora";
   };
 
-  const handleTabClick = (index: any) => {
+  const handleTabClick = (index: number) => {
     setTransitioning(true);
     setTimeout(() => {
       setActiveTab(index);
@@ -30,7 +31,8 @@ const Tabs = ({ data }: { data: Tab[] }) => {
     <section>
       <nav className={styles.tabs}>
         {data.map((tab) => (
-          <button
+          <a
+            href="#"
             key={tab.id}
             className={
               styles.button + (tab.id === activeTab ? ` ${styles.active}` : "")
@@ -38,7 +40,7 @@ const Tabs = ({ data }: { data: Tab[] }) => {
             onClick={() => changeTab(tab.id)}
           >
             {tab.title}
-          </button>
+          </a>
         ))}
       </nav>
       <article
@@ -46,7 +48,7 @@ const Tabs = ({ data }: { data: Tab[] }) => {
           transitioning ? styles.transitioning : ""
         }`}
       >
-        {RenderContent()}
+        {renderContent()}
       </article>
     </section>
   );
