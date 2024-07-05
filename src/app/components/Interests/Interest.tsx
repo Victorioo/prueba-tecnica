@@ -17,9 +17,9 @@ function Interests() {
           <Card
             type="music"
             key={index}
-            title={item.title}
-            author={item.author}
-            image={item.image}
+            title={item?.title}
+            author={item?.author}
+            image={item.image }
           />
         ))}
       </article>

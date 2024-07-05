@@ -52,5 +52,4 @@ export const music = [
     author: "Red Hot Chili Peppers",
     image: "/albums/thegeta.jpg",
   },
-  ,
 ];
