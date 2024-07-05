@@ -11,7 +11,7 @@ interface InputProps {
   error?: boolean;
   errorMessage?: string;
   onChange: (value: string) => void;
-  style: React.CSSProperties;
+  style?: React.CSSProperties;
   label: string;
 }
 

@@ -1,6 +1,6 @@
 .gradient {
   background: linear-gradient(90deg, #2beba3 0%, #2196f3 100%);
-  height: 25dvh;
+  height: 20dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,8 +13,10 @@
   color: white;
 }
 
-.main p {
-  font-size: 1rem;
-  font-weight: 300;
-  margin-top: 1rem;
+
+@media screen and (max-width: 768px) {
+  .main {
+    max-width: 80%;
+  }
+  
 }

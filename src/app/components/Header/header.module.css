@@ -50,7 +50,7 @@
   height: 100%;
   color: white;
   text-decoration: none;
-  font-size: .9rem;
+  font-size: .85rem;
   padding: 6px 25px;
   text-align: center;
   font-weight: 400;
@@ -65,12 +65,39 @@
   border: 1px solid rgba(255, 255, 255, 1);
 }
 
-@keyframes chargingBlur {
-  0% {
-    filter: blur(5px);
+.link:active {
+  border: 1px solid rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
   }
 
-  100% {
-    filter: blur(0);
+  .info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
+
+  .section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .bio {
+    width: 100%;
+    padding-left: 0;
+    margin: 0.3rem 0 1.5rem 0;
+  }
+
+
 }

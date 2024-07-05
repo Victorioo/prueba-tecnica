@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./form.module.css";
-import { SubmitButton } from "./components/submit-button";
 import ErrorMessage from "./components/error-message";
 import Input from "./components/input";
+import { SubmitButton } from "./components/submit-button";
 
 export default function Form() {
   const [data, setData] = useState({
