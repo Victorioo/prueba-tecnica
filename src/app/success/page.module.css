@@ -1,0 +1,20 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 28px;
+  width: 100vw;
+  height: 100dvh;
+  /* background-color: #f0f0f0; */
+}
+
+.thanks {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.return {
+  color: #0865ec
+}
