@@ -3,41 +3,50 @@
   justify-content: center;
   align-items: center;
   gap: 1.2rem;
-  padding: 2rem 0 3rem 0;
+  padding: 2rem 0 0rem 0;
   max-width: 60%;
   margin: 0 auto;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
-  /* background-color: red; */
 }
 
-.header {
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-
-.header img {
+.profilePic {
   border-radius: 100%;
   margin-top: -5rem;
+  animation: chargingBlur .2s ease-in;
 }
 
-.header img {
-  animation: chargingBlur .3s ease-in-out;
-}
-
-.header div {
-  /* background-color: blue; */
+.section {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.header .span {
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.name {
   color: white;
   font-weight: 400;
   font-size: 1.5rem;
+  width: 100%;
 }
 
-.header div a {
+.bio {
+  color: #999;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-left: 2px;
+  width: 40ch;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.link {
   height: 100%;
   color: white;
   text-decoration: none;
@@ -49,18 +58,18 @@
   border: 1px solid rgba(128, 128, 128, 0.3);
   border-radius: 5px;
   margin-top: 0.1rem;
-  transition: border .35s;
 }
 
 
-.header div a:hover {
+.link:hover {
   border: 1px solid rgba(255, 255, 255, 1);
 }
 
 @keyframes chargingBlur {
   0% {
-    filter: blur(10px);
+    filter: blur(5px);
   }
+
   100% {
     filter: blur(0);
   }
