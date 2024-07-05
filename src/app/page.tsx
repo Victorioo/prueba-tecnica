@@ -11,7 +11,6 @@ const data: Tab[] = [
   { id: 1, title: "Contacto", content: <Form /> },
   { id: 2, title: "Intereses" },
   { id: 3, title: "Sobre mí", },
-
 ];
 
 export default function Home() {
